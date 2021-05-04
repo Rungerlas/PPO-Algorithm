@@ -1,0 +1,106 @@
+reward_type=30
+choose EpisodeInfoEnvHist
+[]
+yolo built
+syn  local_model/c1/w:0 <- model/c1/w:0
+syn  local_model/c1/b:0 <- model/c1/b:0
+syn  local_model/c2/w:0 <- model/c2/w:0
+syn  local_model/c2/b:0 <- model/c2/b:0
+syn  local_model/c3/w:0 <- model/c3/w:0
+syn  local_model/c3/b:0 <- model/c3/b:0
+syn  local_model/fc1/w:0 <- model/fc1/w:0
+syn  local_model/fc1/b:0 <- model/fc1/b:0
+syn  local_model/pi/w:0 <- model/pi/w:0
+syn  local_model/pi/b:0 <- model/pi/b:0
+syn  local_model/v/w:0 <- model/v/w:0
+syn  local_model/v/b:0 <- model/v/b:0
+<tf.Variable 'model/c1/w:0' shape=(8, 8, 12, 32) dtype=float32_ref>
+<tf.Variable 'model/c1/b:0' shape=(1, 32, 1, 1) dtype=float32_ref>
+<tf.Variable 'model/c2/w:0' shape=(4, 4, 32, 64) dtype=float32_ref>
+<tf.Variable 'model/c2/b:0' shape=(1, 64, 1, 1) dtype=float32_ref>
+<tf.Variable 'model/c3/w:0' shape=(3, 3, 64, 64) dtype=float32_ref>
+<tf.Variable 'model/c3/b:0' shape=(1, 64, 1, 1) dtype=float32_ref>
+<tf.Variable 'model/fc1/w:0' shape=(3136, 512) dtype=float32_ref>
+<tf.Variable 'model/fc1/b:0' shape=(512,) dtype=float32_ref>
+<tf.Variable 'model/pi/w:0' shape=(512, 10) dtype=float32_ref>
+<tf.Variable 'model/pi/b:0' shape=(10,) dtype=float32_ref>
+<tf.Variable 'model/v/w:0' shape=(512, 1) dtype=float32_ref>
+<tf.Variable 'model/v/b:0' shape=(1,) dtype=float32_ref>
+params_grad
+loading...
+12
+12
+<tf.Variable 'model/c1/w:0' shape=(8, 8, 12, 32) dtype=float32_ref>
+<tf.Variable 'model/c1/b:0' shape=(1, 32, 1, 1) dtype=float32_ref>
+<tf.Variable 'model/c2/w:0' shape=(4, 4, 32, 64) dtype=float32_ref>
+<tf.Variable 'model/c2/b:0' shape=(1, 64, 1, 1) dtype=float32_ref>
+<tf.Variable 'model/c3/w:0' shape=(3, 3, 64, 64) dtype=float32_ref>
+<tf.Variable 'model/c3/b:0' shape=(1, 64, 1, 1) dtype=float32_ref>
+<tf.Variable 'model/fc1/w:0' shape=(3136, 512) dtype=float32_ref>
+<tf.Variable 'model/fc1/b:0' shape=(512,) dtype=float32_ref>
+<tf.Variable 'model/pi/w:0' shape=(512, 10) dtype=float32_ref>
+<tf.Variable 'model/pi/b:0' shape=(10,) dtype=float32_ref>
+<tf.Variable 'model/v/w:0' shape=(512, 1) dtype=float32_ref>
+<tf.Variable 'model/v/b:0' shape=(1,) dtype=float32_ref>
+(8, 8, 12, 32)
+(1, 32, 1, 1)
+(4, 4, 32, 64)
+(1, 64, 1, 1)
+(3, 3, 64, 64)
+(1, 64, 1, 1)
+(3136, 512)
+(512,)
+(512, 10)
+(10,)
+(512, 1)
+(1,)
+len(params)=12
+len(loaded_params)=12
+model/c1/w:0
+(8, 8, 12, 32)
+(8, 8, 12, 32)
+model/c1/b:0
+(1, 32, 1, 1)
+(1, 32, 1, 1)
+model/c2/w:0
+(4, 4, 32, 64)
+(4, 4, 32, 64)
+model/c2/b:0
+(1, 64, 1, 1)
+(1, 64, 1, 1)
+model/c3/w:0
+(3, 3, 64, 64)
+(3, 3, 64, 64)
+model/c3/b:0
+(1, 64, 1, 1)
+(1, 64, 1, 1)
+model/fc1/w:0
+(3136, 512)
+(3136, 512)
+model/fc1/b:0
+(512,)
+(512,)
+model/pi/w:0
+(512, 10)
+(512, 10)
+model/pi/b:0
+(10,)
+(10,)
+model/v/w:0
+(512, 1)
+(512, 1)
+model/v/b:0
+(1,)
+(1,)
+observation_space shape
+(84, 84, 12)
+restored
+restored value
+[0.03070242]
+[0.]
+yolo loaded
+syn valid
+[0.03070242]
+[0.03070242]
+self.epson=0.100000
+return!
