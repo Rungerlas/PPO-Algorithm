@@ -1,0 +1,3 @@
+2018-08-08 02:55:32.355980: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-08-08 02:55:32.356546: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUresult(-1)
+2018-08-08 02:55:32.356675: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (f2b77b3b813b): /proc/driver/nvidia/version does not exist
