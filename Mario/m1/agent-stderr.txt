@@ -1,0 +1,31 @@
+2018-08-14 02:48:20.714942: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-08-14 02:48:20.716172: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUresult(-1)
+2018-08-14 02:48:20.716389: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host (adcc0365ee61): /proc/driver/nvidia/version does not exist
+Traceback (most recent call last):
+  File "/root/compo/agent.py", line 87, in <module>
+    main()
+  File "/root/compo/agent.py", line 83, in main
+    agent.learn(mon_sess)
+  File "/root/compo/lawking/dist_ppo2/ppo2.py", line 450, in learn
+    obs, returns, masks, actions, values, neglogpacs, states, epinfos = self.runner.run(sess) #pylint: disable=E0632
+  File "/root/compo/lawking/dist_ppo2/ppo2.py", line 348, in run
+    obs, rewards, self.dones, infos = self.env.step(actions)
+  File "/root/venv/lib/python3.5/site-packages/baselines/common/vec_env/__init__.py", line 78, in step
+    return self.step_wait()
+  File "/root/compo/lawking/wrapper/mario_util.py", line 331, in step_wait
+    obs_tuple, reward,  done, info = self.envs[i].step(self.actions[i])
+  File "/root/compo/lawking/wrapper/mario_util.py", line 161, in step
+    obs, reward, done, info = self.env.step(action)
+  File "/root/venv/lib/python3.5/site-packages/gym/core.py", line 313, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/root/venv/lib/python3.5/site-packages/gym/core.py", line 330, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/root/venv/lib/python3.5/site-packages/gym/core.py", line 341, in step
+    return self.env.step(action)
+  File "/root/venv/lib/python3.5/site-packages/gym_remote/client.py", line 33, in step
+    self.ch_ac.value = action
+  File "/root/venv/lib/python3.5/site-packages/gym_remote/bridge.py", line 36, in value
+    self._value = self.parse(value)
+  File "/root/venv/lib/python3.5/site-packages/gym_remote/bridge.py", line 104, in parse
+    folded = np.dot(self.folds, value % self.ranges)
+ValueError: operands could not be broadcast together with shapes (12,) (8,) 
